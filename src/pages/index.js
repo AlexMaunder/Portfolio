@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 import Layout from '../components/Layout';
 import PageFooter from '../components/PageFooter';
 import SideBar from '../components/SideBar';
+import config from '../../config';
 
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
@@ -12,7 +13,10 @@ import pic5 from '../assets/images/pic05.jpg';
 import pic6 from '../assets/images/pic06.jpg';
 import pic7 from '../assets/images/pic07.jpg';
 import lake_morraine from '../assets/images/lake_morraine.jpg';
+import guitar from '../assets/images/guitar.jpg';
 import Scroll from '../components/Scroll';
+
+import { FaBeer } from 'react-icons/fa';
 
 const sections = [
   { id: 'top', name: 'Home', icon: 'fa-home' },
@@ -21,7 +25,7 @@ const sections = [
   { id: 'contact', name: 'Contact', icon: 'fa-envelope' },
 ];
 
-const IndexPage = ({ socialLinks = [] }) => (
+const IndexPage = ({ socialLinks = config.socialLinks }) => (
   <Layout>
     <SideBar sections={sections} />
 
@@ -44,7 +48,11 @@ const IndexPage = ({ socialLinks = [] }) => (
                 Show me
               </a>
             </Scroll>
-            <div className="bottom">
+
+            <br></br>
+            <br></br>
+            <br></br>
+
               <ul className="icons">
                 {socialLinks.map(social => {
                   const { icon, name, url } = social;
@@ -57,7 +65,7 @@ const IndexPage = ({ socialLinks = [] }) => (
                   );
                 })}
               </ul>
-            </div>
+
           </footer>
         </div>
       </section>
@@ -68,8 +76,8 @@ const IndexPage = ({ socialLinks = [] }) => (
             <h2>About Me</h2>
           </header>
 
-          <a href="/#" className="image featured">
-            <img src={lake_morraine} alt="" />
+          <a href="/#" class="sagrada" className="image featured">
+            <img src={guitar} alt="" />
           </a>
 
           <p>
@@ -80,18 +88,28 @@ const IndexPage = ({ socialLinks = [] }) => (
             Here are some of the technologies I've been working with recently:
           </p>
 
-          <div className="container-fluid text-center">
+          <div style={{display: 'flex', justifyContent: 'center'}} className="container-fluid text-center">
             <Row>
           		<Col>TypeScript</Col>
           		<Col>Python</Col>
           		<Col>MySQL</Col>
           	</Row>
+            </div>
+
+            <div style={{display: 'flex', justifyContent: 'center'}} className="container-fluid text-center">
             <Row>
               <Col>HTML &amp; CSS</Col>
               <Col>React</Col>
               <Col>Node.js</Col>
           	</Row>
           </div>
+
+          <br></br>
+          <br></br>
+
+          <form action="https://drive.google.com/file/d/1KAGAQBgkJnHphTTGxjEQ5QDUZfcYhJYm/view?usp=sharing" target="_blank">
+              <input type="submit" value="Resume"/>
+          </form>
 
         </div>
       </section>
@@ -180,6 +198,20 @@ const IndexPage = ({ socialLinks = [] }) => (
           <br></br>
           <br></br>
           <br></br>
+
+            <ul className="icons">
+              {socialLinks.map(social => {
+                const { icon, name, url } = social;
+                return (
+                  <li key={url}>
+                    <a href={url} className={`icon ${icon}`}>
+                      <span className="label">{name}</span>
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+
           <br></br>
           <br></br>
 

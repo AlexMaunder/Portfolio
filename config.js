@@ -18,11 +18,6 @@ module.exports = {
       url: 'https://github.com/alexmaunder',
     },
     {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/alex_maunder',
-    },
-    {
       icon: 'fa-linkedin',
       name: 'Facebook',
       url: 'https://www.linkedin.com/in/alexmaunder/',

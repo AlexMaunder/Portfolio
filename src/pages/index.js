@@ -16,7 +16,7 @@ import lake_morraine from '../assets/images/lake_morraine.jpg';
 import guitar from '../assets/images/guitar.jpg';
 import Scroll from '../components/Scroll';
 
-import { FaBeer } from 'react-icons/fa';
+import { SiTypescript, SiPython, SiRuby, SiMysql, SiHtml5, SiCsswizardry, SiReact, SiNodeDotJs } from 'react-icons/si';
 
 const sections = [
   { id: 'top', name: 'Home', icon: 'fa-home' },
@@ -90,17 +90,18 @@ const IndexPage = ({ socialLinks = config.socialLinks }) => (
 
           <div style={{display: 'flex', justifyContent: 'center'}} className="container-fluid text-center">
             <Row>
-          		<Col>TypeScript</Col>
-          		<Col>Python</Col>
-          		<Col>MySQL</Col>
+          		<Col><SiTypescript /> TypeScript</Col>
+          		<Col><SiPython /> Python</Col>
+          		<Col><SiRuby /> Ruby</Col>
+          		<Col><SiMysql /> MySQL</Col>
           	</Row>
             </div>
 
             <div style={{display: 'flex', justifyContent: 'center'}} className="container-fluid text-center">
             <Row>
-              <Col>HTML &amp; CSS</Col>
-              <Col>React</Col>
-              <Col>Node.js</Col>
+              <Col><SiHtml5 /> HTML &amp;  <SiCsswizardry /> CSS</Col>
+              <Col><SiReact /> React</Col>
+              <Col><SiNodeDotJs /> Node.js</Col>
           	</Row>
           </div>
 
@@ -127,7 +128,7 @@ const IndexPage = ({ socialLinks = config.socialLinks }) => (
           <div className="row">
             <div className="col-4 col-12-mobile">
               <article className="item">
-                <a href="/#" className="image fit">
+                <a href="https://github.com/AlexMaunder/genelab" className="image fit">
                   <img src={pic2} alt="" />
                 </a>
                 <header>
@@ -135,7 +136,7 @@ const IndexPage = ({ socialLinks = config.socialLinks }) => (
                 </header>
               </article>
               <article className="item">
-                <a href="/#" className="image fit">
+                <a href="https://github.com/AlexMaunder/Project0" className="image fit">
                   <img src={pic3} alt="" />
                 </a>
                 <header>
@@ -145,7 +146,7 @@ const IndexPage = ({ socialLinks = config.socialLinks }) => (
             </div>
             <div className="col-4 col-12-mobile">
               <article className="item">
-                <a href="/#" className="image fit">
+                <a href="https://github.com/AlexMaunder/Project-1" className="image fit">
                   <img src={pic4} alt="" />
                 </a>
                 <header>
@@ -153,7 +154,7 @@ const IndexPage = ({ socialLinks = config.socialLinks }) => (
                 </header>
               </article>
               <article className="item">
-                <a href="/#" className="image fit">
+                <a href="https://github.com/AlexMaunder/Covid-Co-op" className="image fit">
                   <img src={pic5} alt="" />
                 </a>
                 <header>
@@ -163,21 +164,14 @@ const IndexPage = ({ socialLinks = config.socialLinks }) => (
             </div>
             <div className="col-4 col-12-mobile">
               <article className="item">
-                <a href="/#" className="image fit">
+                <a href="https://chrome.google.com/webstore/detail/manage-protect/leffomhacdbjlihlnhdmiplphjojeedm" className="image fit">
                   <img src={pic6} alt="" />
                 </a>
                 <header>
                   <h3>Chrome Extension</h3>
                 </header>
               </article>
-              <article className="item">
-                <a href="/#" className="image fit">
-                  <img src={pic7} alt="" />
-                </a>
-                <header>
-                  <h3>Orci Convallis</h3>
-                </header>
-              </article>
+
             </div>
           </div>
         </div>

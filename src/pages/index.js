@@ -21,7 +21,7 @@ import { SiTypescript, SiPython, SiRuby, SiMysql, SiHtml5, SiCsswizardry, SiReac
 const sections = [
   { id: 'top', name: 'Home', icon: 'fa-home' },
   { id: 'about', name: 'About Me', icon: 'fa-user' },
-  { id: 'portfolio', name: 'Portfolio', icon: 'fa-th' },
+  { id: 'portfolio', name: 'Projects', icon: 'fa-th' },
   { id: 'contact', name: 'Contact', icon: 'fa-envelope' },
 ];
 
@@ -85,6 +85,17 @@ const IndexPage = ({ socialLinks = config.socialLinks }) => (
           </p>
 
           <p>
+          My career has constantly led me down an analytical pathway, but throughout my career, I have learnt that I can be more creative and have a far larger positive impact with code.
+          </p>
+          <p>
+          After years of self-learning and applying what code that I can to my workplace, I am taking the next step to do what I love and become a full time Software Developer.
+          </p>
+          I am extremely curious about all things tech. I love learning new ways to increase efficiency (particularly with code) and taking on new technical challenges.
+          <p>
+          I am looking for new challenges in the software dev space to broaden my already strong repertoire of IT skills and technical ability.
+          </p>
+
+          <p>
             Here are some of the technologies I've been working with recently:
           </p>
 
@@ -118,7 +129,7 @@ const IndexPage = ({ socialLinks = config.socialLinks }) => (
       <section id="portfolio" className="two">
         <div className="container">
           <header>
-            <h2>Portfolio</h2>
+            <h2>Projects</h2>
           </header>
 
           <p>
@@ -133,6 +144,8 @@ const IndexPage = ({ socialLinks = config.socialLinks }) => (
                 </a>
                 <header>
                   <h3>GeneLab - Phylogeny Visualiser</h3>
+                  <hr></hr>
+                  <p>A repository for Scientific Lab strains. Create new strains, track phylogeny, upload with QR code.</p>
                 </header>
               </article>
               <article className="item">
@@ -141,6 +154,8 @@ const IndexPage = ({ socialLinks = config.socialLinks }) => (
                 </a>
                 <header>
                   <h3>Naughts & Crosses</h3>
+                  <hr></hr>
+                  <p>Material design and responsive naughts and crosses game.</p>
                 </header>
               </article>
             </div>
@@ -151,6 +166,8 @@ const IndexPage = ({ socialLinks = config.socialLinks }) => (
                 </a>
                 <header>
                   <h3>CodeConqr</h3>
+                  <hr></hr>
+                  <p>A repository of coding resources on the web. Create learning streams, track progress and keep notes on progress.</p>
                 </header>
               </article>
               <article className="item">
@@ -159,6 +176,8 @@ const IndexPage = ({ socialLinks = config.socialLinks }) => (
                 </a>
                 <header>
                   <h3>Covid Co-Op</h3>
+                  <hr></hr>
+                  <p>Full CRUD app to link medical suppliers with organisations in need. Shopping cart, marketplace and Google Maps integration.</p>
                 </header>
               </article>
             </div>
@@ -169,9 +188,20 @@ const IndexPage = ({ socialLinks = config.socialLinks }) => (
                 </a>
                 <header>
                   <h3>Chrome Extension</h3>
+                  <hr></hr>
+                  <p>Custom extension for partners to easily access resources.</p>
                 </header>
               </article>
-
+              <article className="item">
+                <a href="https://github.com/AlexMaunder/AWS_route53/blob/master/Route53_API.py" className="image fit">
+                  <img src={pic7} alt="" />
+                </a>
+                <header>
+                  <h3>DNS Migration Tool</h3>
+                  <hr></hr>
+                  <p>DNS migration tool using Python OOP and AWS Route53. Used to migrate over 200 customers' zone records.</p>
+                </header>
+              </article>
             </div>
           </div>
         </div>

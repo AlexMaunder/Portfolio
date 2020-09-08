@@ -76,7 +76,7 @@ const IndexPage = ({ socialLinks = config.socialLinks }) => (
             <h2>About Me</h2>
           </header>
 
-          <a href="/#" class="sagrada" className="image featured">
+          <a href="/#" className="image featured">
             <img src={guitar} alt="" />
           </a>
 
